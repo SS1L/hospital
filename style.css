@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*/
+
+header {
+    padding: 20px 0;
+    line-height: 50px;
+}
+
+.header-menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu-iteam {
+    list-style-type: none;
+}
+
+.header-menu-iteam a {
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.chose-hospital {
+    padding: 80px 0;
+}
+
+.chose-hospital-inside {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title-chose {
+    text-align: center;
+}
+
+.title-chose h2{
+    font-size: calc(1rem + 1.23vw);
+}
+
+.title-chose hr {
+    width: 10%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.information {
+    display: flex;
+    margin: 50px 0;
+}
+
+/* need reason-1 ... reason-4 */
+/* need fix*/
+.reason-1, .reason-2, .reason-3, .reason-4  {
+
+}
+
+.stethoscope-img {
+    text-align: center;
+}
+
+.doctor-img {
+    text-align: center;
+}
+
+.nurse-img {
+    text-align: center;
+}
+
+.information h3 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.btn-hospital {
+    text-align: center;
+}
+
+.about-hospital {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #003da5;
+}
+
+.about-hospital a {
+    color: white;
+    text-decoration: none;
+}
