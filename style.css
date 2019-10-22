@@ -10,8 +10,8 @@
 }*/
 
 header {
-    padding: 20px 0;
-    line-height: 50px;
+    padding: 10px 0;
+    line-height: 30px;
 }
 
 .header-menu-wrap {
@@ -26,6 +26,13 @@ header {
 .header-menu-iteam a {
     padding: 10px 20px;
     text-decoration: none;
+}
+
+.first-page {
+    background-image: url(12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .chose-hospital {
@@ -59,6 +66,7 @@ header {
 /* need reason-1 ... reason-4 */
 /* need fix*/
 .reason-1, .reason-2, .reason-3, .reason-4  {
+    padding: 20px;
 
 }
 
@@ -94,3 +102,123 @@ header {
     color: white;
     text-decoration: none;
 }
+
+
+.info-hospital {
+    background-image: url("http://kokl.com.ua/wp-content/uploads/2016/06/h-parallax-2.jpg");
+    padding-top: 80px;
+    padding-bottom: 40px;
+    min-height: 150px;
+}
+
+.info-hospital-inside {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    min-height: inherit;
+}
+
+
+.contact-info {
+    background-image: url(iStock-619636894.jpg);
+}
+.t {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hospital-units {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.medical-center {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.img-medical-center {
+    text-align: center;
+}
+
+.hospital-departament {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.img-hospital {
+    text-align: center;
+}
+
+.mri {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.mri-img{
+    text-align: center;
+}
+
+.eye-drops {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.eye-drops-img{
+    text-align: center;
+}
+
+.baby-hospital {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.baby-img {
+    text-align: center;
+}
+
+.dentistry {
+    max-width: 25%;
+    background-color: #f5f7fa;
+}
+
+.dentistry-img {
+    text-align: center;
+}
+
+.info {
+    margin: 15px 15px;
+    padding: 20px;
+}
+
+.info h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.info p {
+    text-align: center;
+}
+
+
+
+/*
+.departament {
+    padding: 70px 0;
+    background-image: url(iStock-619636894.jpg);
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1170px;
+    }
+}
+*/
