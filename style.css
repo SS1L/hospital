@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 /*body {
     width: 100%;
@@ -35,8 +36,24 @@ header {
     height: 100vh;
 }
 
+.head-name {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-head-name {
+    text-align: center
+}
+
+.name-hospital {
+    margin-bottom: 30px;
+}
+
 .chose-hospital {
     padding: 80px 0;
+    background-color: #f5f7fa;
 }
 
 .chose-hospital-inside {
@@ -109,6 +126,7 @@ header {
     padding-top: 80px;
     padding-bottom: 40px;
     min-height: 150px;
+    color: white;
 }
 
 .info-hospital-inside {
@@ -119,88 +137,22 @@ header {
     min-height: inherit;
 }
 
+.count-title {
+    font-size: 18px; 
+    margin: 10px 0;
+    text-align: center;
+}
+
+.count-span {
+    font-size: 48px;
+    margin: 10px;
+}
 
 .contact-info {
     background-image: url(iStock-619636894.jpg);
 }
-.t {
-    width: 70%;
-    margin: 0 auto;
-}
 
-.hospital-units {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
 
-.medical-center {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.img-medical-center {
-    text-align: center;
-}
-
-.hospital-departament {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.img-hospital {
-    text-align: center;
-}
-
-.mri {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.mri-img{
-    text-align: center;
-}
-
-.eye-drops {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.eye-drops-img{
-    text-align: center;
-}
-
-.baby-hospital {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.baby-img {
-    text-align: center;
-}
-
-.dentistry {
-    max-width: 25%;
-    background-color: #f5f7fa;
-}
-
-.dentistry-img {
-    text-align: center;
-}
-
-.info {
-    margin: 15px 15px;
-    padding: 20px;
-}
-
-.info h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.info p {
-    text-align: center;
-}
 
 
 
@@ -222,3 +174,45 @@ header {
     }
 }
 */
+
+.info-contact{
+    padding-top: 100px;
+}
+.contact-us {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.contact-us-info{
+    text-align: center; 
+}
+
+.paragraf-contact {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.icons{ 
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+}
+
+.room-icon{
+    width: 33%;
+    text-align: center;
+}
+
+.phone-icon {
+    width: 33%;
+    text-align: center;
+}
+
+.mail-icon {
+    width: 33%;
+    text-align: center;
+}
