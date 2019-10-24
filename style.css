@@ -51,6 +51,16 @@ header {
     margin-bottom: 30px;
 }
 
+.registration {
+    padding: 60px 0;
+    background-color: #8BC34A;
+}
+
+.text-registration {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .chose-hospital {
     padding: 80px 0;
     background-color: #f5f7fa;
@@ -185,6 +195,8 @@ header {
 
 .contact-us-info{
     text-align: center; 
+    margin-bottom: 25px;
+    font-size: 35px;
 }
 
 .paragraf-contact {
@@ -192,6 +204,15 @@ header {
     margin: 0 auto;
     margin-bottom: 70px;
     text-align: center;
+    color: #707070;
+}
+
+.room-img {
+    width: 10%;
+}
+
+.phone-img {
+    width: 10%;
 }
 
 .icons{ 
@@ -216,3 +237,22 @@ header {
     width: 33%;
     text-align: center;
 }
+
+
+
+footer {
+    padding: 60px 0;
+}
+
+
+/*start quote*/
+
+.quote {
+    padding: 60px 0;
+}
+
+.quote-inside {
+    width: 80%;
+    margin: 0 auto;
+}
+/*end quote*/
