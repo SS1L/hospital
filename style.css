@@ -73,7 +73,7 @@ header {
 
 .registration {
     padding: 60px 0;
-    background-color: blue;
+    background-color: rgb(0, 61, 165);
 }
 
 .text-registration {
@@ -82,10 +82,11 @@ header {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    color: white;
 }
 
 .btn-registration{
-    background-color: red;
+    background-color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -322,6 +323,7 @@ footer {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    border: 2px solid gray;
 }
 
 .second-client {
@@ -337,6 +339,7 @@ footer {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    border: 2px solid gray;
 }
 
 /*end quote*/
