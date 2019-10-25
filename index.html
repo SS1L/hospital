@@ -10,8 +10,8 @@
 
 <body>
     <header>
-        <div>
-            <!--<img src="iStock-471629610-Converted.png"> -->
+        <div class="container">
+            <img class="header-img" src="iStock-471629610-Converted.png"> 
             <nav class="header-menu">
                 <ul class="header-menu-wrap">
                     <li class="header-menu-iteam"><a href="#">Страхування</a></li>
@@ -32,6 +32,27 @@
     </div>
 
 
+    <div class="info-hospital">
+        <div class="info-hospital-inside">
+            <div>
+                <span class="count-span">30</span>
+                <h4 class="count-title">отделений</h4>
+            </div>
+            <div>
+                <span class="count-span">155</span>
+                <h4 class="count-title">лет опыта</h4>
+            </div>
+            <div>
+                <span class="count-span">16000</span>
+                <h4 class="count-title">операций</h4>
+            </div>
+            <div>
+                <span class="count-span">27000</span>
+                <h4 class="count-title">госпитализаций</h4>
+            </div>
+        </div>
+    </div>
+
     <div class="chose-hospital">
         <div class="chose-hospital-inside">
             <div class="title-chose">
@@ -46,7 +67,7 @@
                         <img src="stethoscope.png">
                     </div>
                     <h3>Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis veritatis harum cumque quis,
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis veritatis harum cumque quis,
                         dolores at, natus ea, assumenda aliquid neque suscipit necessitatibus quod consequatur!
                         Distinctio voluptatem repellat qui dolore porro!</p>
                 </div>
@@ -55,7 +76,7 @@
                         <img src="doctor.png">
                     </div>
                     <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aut? Assumenda nulla vitae
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, aut? Assumenda nulla vitae
                         explicabo beatae? Ullam recusandae mollitia, veniam praesentium, nisi totam, harum labore esse
                         eos non dignissimos tempora cupiditate!</p>
                 </div>
@@ -64,7 +85,7 @@
                         <img src="nurse.png">
                     </div>
                     <h3>Lorem ipsum dolor sit.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptates labore et similique
+                    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde voluptates labore et similique
                         sint, totam exercitationem adipisci cum consequuntur sit quam aperiam blanditiis impedit?
                         Quibusdam, provident eveniet? Eligendi, consectetur ipsam?
                     </p>
@@ -74,7 +95,7 @@
                         <img src="stethoscope.png">
                     </div>
                     <h3>Lorem ipsum dolor sit amet.</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, esse qui libero harum voluptate
+                    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, esse qui libero harum voluptate
                         maiores exercitationem ea nisi quibusdam. Eveniet consequatur corrupti odit velit repellat.
                         Necessitatibus et iure culpa alias? </p>
                 </div>
@@ -89,12 +110,7 @@
         </div>
     </div>
 
-    <section class="registration">
-        <div class="text-registration">
-            <h1>Register today and get first appointment!</h1>
-            <a href="#">Registration</a>
-        </div>
-    </section>
+   
     <!--
     <div class="departament">
         <div class="container">
@@ -124,42 +140,33 @@
     </div>
 -->
 
-    <div class="info-hospital">
-        <div class="info-hospital-inside">
-            <div>
-                <span class="count-span">30</span>
-                <h4 class="count-title">отделений</h4>
-            </div>
-            <div>
-                <span class="count-span">155</span>
-                <h4 class="count-title">лет опыта</h4>
-            </div>
-            <div>
-                <span class="count-span">16000</span>
-                <h4 class="count-title">операций</h4>
-            </div>
-            <div>
-                <span class="count-span">27000</span>
-                <h4 class="count-title">госпитализаций</h4>
-            </div>
+    
+
+
+    <section class="registration">
+        <div class="text-registration">
+            <h1>Register today and get first appointment!</h1>
+            <button class="btn-registration">
+                <a href="#">Registration</a>
+            </button>
         </div>
-    </div>
+    </section>
 
 
     <section class="quote">
         <div class="quote-inside">
             <h2>Подяки клієнтів</h2>
-            <div>
-                <div>
-                    <img src="https://www.cismiles.com/assets/images/drs-hm.jpg">
+            <div class="client">
+                <div class="first-client">
+                    <img class="img-client-1" src="https://www.cismiles.com/assets/images/drs-hm.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum, adipisci expedita iure, a,
                         incidunt
                         cupiditate neque animi iste alias cumque distinctio qui vel ullam quas soluta asperiores. Natus,
                         asperiores!
                     </p>
                 </div>
-                <div>
-                    <img
+                <div class="second-client">
+                    <img class="img-client-2"
                         src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ab nobis, earum atque veniam maxime
                         doloribus
@@ -231,9 +238,7 @@
                     </div>
                 </div>
                 <div class="mail-icon">
-                    <i class="material-icons">
-                        mail_outline
-                    </i>
+                    <img class="mail-img" src="mail-24px.svg">
                     <div>
                         <a href="#">no-replay@gmail.com</a>
                         <br>

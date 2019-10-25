@@ -10,9 +10,24 @@
     padding: 0;
 }*/
 
+p {
+    color: #707070;
+}
+
 header {
-    padding: 10px 0;
     line-height: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-img {
+    width: 60px;
 }
 
 .header-menu-wrap {
@@ -27,6 +42,11 @@ header {
 .header-menu-iteam a {
     padding: 10px 20px;
     text-decoration: none;
+    color: #000000;
+}
+
+.headet-menu-iteam a:hover {
+    color: rgb(231, 10, 84);
 }
 
 .first-page {
@@ -53,12 +73,27 @@ header {
 
 .registration {
     padding: 60px 0;
-    background-color: #8BC34A;
+    background-color: blue;
 }
 
 .text-registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+}
+
+.btn-registration{
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-registration a {
+    text-decoration: none;
+    color: white;
 }
 
 .chose-hospital {
@@ -94,7 +129,10 @@ header {
 /* need fix*/
 .reason-1, .reason-2, .reason-3, .reason-4  {
     padding: 20px;
+}
 
+.text-center {
+    text-align: center;
 }
 
 .stethoscope-img {
@@ -186,7 +224,7 @@ header {
 */
 
 .info-contact{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .contact-us {
     width: 85%;
@@ -209,10 +247,17 @@ header {
 
 .room-img {
     width: 10%;
+    margin-bottom: 10px;
 }
 
 .phone-img {
     width: 10%;
+    margin-bottom: 10px; 
+}
+
+.mail-img {
+    width: 10%;
+    margin-bottom: 10px;
 }
 
 .icons{ 
@@ -255,4 +300,43 @@ footer {
     width: 80%;
     margin: 0 auto;
 }
+
+.quote-inside h2 {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.client {
+    display: flex;
+}
+
+.first-client {
+    display: flex;
+    width: 50%;
+}
+.first-client p {
+    padding: 20px 30px;
+}
+
+.img-client-1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.second-client {
+    display: flex;
+    width: 50%;
+}
+
+.second-client p {
+    padding: 20px 30px;
+}
+
+.img-client-2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 /*end quote*/
