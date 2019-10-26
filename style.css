@@ -17,6 +17,9 @@ p {
 header {
     line-height: 30px;
 }
+.menu-wrapper {
+    display: none;
+}
 
 .container {
     display: flex;
@@ -80,7 +83,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     color: white;
 }
@@ -95,6 +98,7 @@ header {
 .btn-registration a {
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
 
 .chose-hospital {
@@ -167,6 +171,7 @@ header {
 .about-hospital a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 
@@ -225,7 +230,7 @@ header {
 */
 
 .info-contact{
-    padding-top: 50px;
+    padding: 20px 0 80px 0;
 }
 .contact-us {
     width: 85%;
@@ -239,7 +244,7 @@ header {
 }
 
 .paragraf-contact {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 70px;
     text-align: center;
@@ -287,7 +292,7 @@ header {
 
 
 footer {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 
@@ -298,11 +303,12 @@ footer {
 }
 
 .quote-inside {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .quote-inside h2 {
+    font-size: 35px;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -343,3 +349,102 @@ footer {
 }
 
 /*end quote*/
+
+footer { 
+    background-color: #000000;
+}
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-menu-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu-item {
+    list-style: none;
+}
+
+.footer-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-menu-item a:hover{
+    color: #c2bdbd;
+}
+
+.bottom-footer {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bottom-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.reference {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.reference a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.bottom-footer a:hover {
+    color: #c2bdbd;
+}
+
+@media (max-width: 600px) {
+    .information{
+        flex-flow: column;
+    }
+
+    .info-hospital-inside{
+        flex-flow: column;
+    }
+
+    .icons {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .about-hospital {
+        width: 100%;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+
+    .room-icon {
+        width: 50%;
+    }
+
+    .phone-icon {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .mail-icon {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .paragraf-contact {
+        margin-bottom: 40px;
+    }
+
+    /*hfmburger*/
+    
+}
