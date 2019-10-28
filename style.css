@@ -53,30 +53,42 @@ header {
 }
 
 .first-page {
-    background-image: url(12.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    display: flex;
+    height: 662px;
 }
 
-.head-name {
-    height: inherit;
+.head-name-left{
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 50%;
+    color: #fff;
+    background: rgb(9,101,130);
+    background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
 }
 
 .inside-head-name {
-    text-align: center
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.name-hospital {
-    margin-bottom: 30px;
+.inside-head-name p {
+    margin-top: 20px;
+    color: white;
+}
+
+.care-hospital {
+    font-size: 70px;
+}
+
+.head-name-right{
+    width: 50%;
+    background-image: url("img/hospital.jpg");
 }
 
 .registration {
     padding: 60px 0;
-    background-color: rgb(0, 61, 165);
+    background-color: #2d96fd;
 }
 
 .text-registration {
@@ -89,7 +101,7 @@ header {
 }
 
 .btn-registration{
-    background-color: #000000;
+    background-color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -97,7 +109,7 @@ header {
 
 .btn-registration a {
     text-decoration: none;
-    color: white;
+    color: #000;
     font-size: 20px;
 }
 
@@ -128,6 +140,16 @@ header {
 .information {
     display: flex;
     margin: 50px 0;
+}
+
+@media(min-width: 901px){
+.reason-v1 {
+    display: flex;
+}
+
+.reason-v2 {
+    display: flex;
+}
 }
 
 /* need reason-1 ... reason-4 */
@@ -165,7 +187,7 @@ header {
     padding: 10px 30px;
     border-radius: 20px;
     border: none;
-    background-color: #003da5;
+    background-color: #000;
 }
 
 .about-hospital a {
@@ -289,7 +311,10 @@ header {
     text-align: center;
 }
 
-
+.mail-icon a {
+    text-decoration: none;
+    color: #000;
+}
 
 footer {
     padding: 30px 0;
@@ -351,7 +376,7 @@ footer {
 /*end quote*/
 
 footer { 
-    background-color: #000000;
+    background-color: #383838;
 }
 
 footer h2 {
@@ -400,6 +425,12 @@ footer h2 {
     text-decoration: none;
 }
 
+.reference img:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
 .bottom-footer a:hover {
     color: #c2bdbd;
 }
@@ -441,10 +472,49 @@ footer h2 {
         width: 50%;
     }
 
+
+
     .paragraf-contact {
         margin-bottom: 40px;
     }
 
     /*hfmburger*/
     
+}
+
+
+@media (max-width: 900px){
+    .client{
+        flex-flow: column;
+    }
+
+    .first-client {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .first-client p {
+        margin-top: 20px; 
+        text-align: center;
+    }
+
+    .img-client-1 {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .second-client{
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .second-client p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .img-client-2 {
+        display: flex;
+        margin: 0 auto;
+    }
 }
