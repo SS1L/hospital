@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*/
+
+p {
+    color: #707070;
+}
+
+header {
+    line-height: 30px;
+}
+.menu-wrapper {
+    display: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-img {
+    width: 60px;
+}
+
+.header-menu-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-menu-iteam {
+    list-style-type: none;
+}
+
+.header-menu-iteam a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.headet-menu-iteam a:hover {
+    color: rgb(231, 10, 84);
+}
+
+.first-page {
+    display: flex;
+    height: 662px;
+}
+
+.head-name-left{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    color: #fff;
+    background: rgb(9,101,130);
+    background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
+}
+
+.inside-head-name {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inside-head-name p {
+    margin-top: 20px;
+    color: white;
+}
+
+.care-hospital {
+    font-size: 70px;
+}
+
+.head-name-right{
+    width: 50%;
+    background-image: url("img/hospital.jpg");
+}
+
+.registration {
+    padding: 60px 0;
+    background-color: #2d96fd;
+}
+
+.text-registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+
+.btn-registration{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.chose-hospital {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.chose-hospital-inside {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title-chose {
+    text-align: center;
+}
+
+.title-chose h2{
+    font-size: calc(1rem + 1.23vw);
+}
+
+.title-chose hr {
+    width: 10%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.information {
+    display: flex;
+    margin: 50px 0;
+}
+
+@media(min-width: 901px){
+.reason-v1 {
+    display: flex;
+}
+
+.reason-v2 {
+    display: flex;
+}
+}
+
+/* need reason-1 ... reason-4 */
+/* need fix*/
+.reason-1, .reason-2, .reason-3, .reason-4  {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.stethoscope-img {
+    text-align: center;
+}
+
+.doctor-img {
+    text-align: center;
+}
+
+.nurse-img {
+    text-align: center;
+}
+
+.information h3 {
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.btn-hospital {
+    text-align: center;
+}
+
+.about-hospital {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0756a5;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.info-hospital {
+    background-image: url("http://kokl.com.ua/wp-content/uploads/2016/06/h-parallax-2.jpg");
+    padding-top: 80px;
+    padding-bottom: 40px;
+    min-height: 150px;
+    color: white;
+}
+
+.info-hospital-inside {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    min-height: inherit;
+}
+
+.count-title {
+    font-size: 18px; 
+    margin: 10px 0;
+    text-align: center;
+}
+
+.count-span {
+    font-size: 48px;
+    margin: 10px;
+}
+
+.contact-info {
+    background-image: url(iStock-619636894.jpg);
+}
+
+
+
+
+
+/*
+.departament {
+    padding: 70px 0;
+    background-image: url(iStock-619636894.jpg);
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1170px;
+    }
+}
+*/
+
+.info-contact{
+    padding: 20px 0 80px 0;
+}
+.contact-us {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.contact-us-info{
+    text-align: center; 
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.paragraf-contact {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #707070;
+}
+
+.room-img {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.phone-img {
+    width: 10%;
+    margin-bottom: 10px; 
+}
+
+.mail-img {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.icons{ 
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+}
+
+.room-icon{
+    width: 33%;
+    text-align: center;
+}
+
+.phone-icon {
+    width: 33%;
+    text-align: center;
+}
+
+.mail-icon {
+    width: 33%;
+    text-align: center;
+}
+
+.mail-icon a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    padding: 30px 0;
+}
+
+
+/*start quote*/
+
+.quote {
+    padding: 60px 0;
+}
+
+.quote-inside {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.quote-inside h2 {
+    font-size: 35px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.client {
+    display: flex;
+}
+
+.first-client {
+    display: flex;
+    width: 50%;
+}
+.first-client p {
+    padding: 20px 30px;
+}
+
+.img-client-1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+}
+
+.second-client {
+    display: flex;
+    width: 50%;
+}
+
+.second-client p {
+    padding: 20px 30px;
+}
+
+.img-client-2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid gray;
+}
+
+/*end quote*/
+
+footer { 
+    background-color: #383838;
+}
+
+footer h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-menu-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu-item {
+    list-style: none;
+}
+
+.footer-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-menu-item a:hover{
+    color: #c2bdbd;
+}
+
+.bottom-footer {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bottom-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.reference {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.reference a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.reference img:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.bottom-footer a:hover {
+    color: #c2bdbd;
+}
+
+@media (max-width: 600px) {
+
+    .text-registration h1 {
+        text-align: center;
+    }
+    
+
+    .information{
+        flex-flow: column;
+    }
+
+    .info-hospital-inside{
+        flex-flow: column;
+    }
+
+    .icons {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .about-hospital {
+        width: 100%;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+
+    .room-icon {
+        width: 50%;
+    }
+
+    .phone-icon {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .mail-icon {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+
+
+    .paragraf-contact {
+        margin-bottom: 40px;
+    }
+
+    .text-registration{
+        flex-flow: column;
+    }
+
+    .register {
+        margin: 40px 0 0 0;
+    }
+
+    /*hfmburger*/
+    
+}
+
+
+@media (max-width: 900px){
+    .first-page {
+        flex-flow: column;
+    }
+
+    .head-name-left {
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .head-name-right{
+        height: 360px;
+        width: 100%;
+    }
+
+    .header-paragraph {
+        display: none;    
+    }
+
+    .client{
+        flex-flow: column;
+    }
+
+    .first-client {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .first-client p {
+        margin-top: 20px; 
+        text-align: center;
+    }
+
+    .img-client-1 {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .second-client{
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .second-client p {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .img-client-2 {
+        display: flex;
+        margin: 0 auto;
+    }
+}
