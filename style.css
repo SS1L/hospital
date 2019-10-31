@@ -14,12 +14,7 @@ p {
     color: #707070;
 }
 
-header {
-    line-height: 30px;
-}
-.menu-wrapper {
-    display: none;
-}
+
 
 .container {
     display: flex;
@@ -29,11 +24,21 @@ header {
     margin: 0 auto;
 }
 
+/* hamburger menu */
+
+
+/*
+*/
+
 .header-img {
     width: 60px;
 }
 
-.header-menu-wrap {
+#menu-btn {
+    opacity: 0;
+}
+
+.menu-box {
     display: flex;
     justify-content: flex-end;
 }
@@ -86,6 +91,10 @@ header {
     background-image: url("img/hospital.jpg");
 }
 
+.head-name-right h1 {
+    display: none;
+}
+
 .registration {
     padding: 60px 0;
     background-color: #2d96fd;
@@ -107,6 +116,11 @@ header {
     text-decoration: none;
     color: #000;
     font-size: 20px;
+}
+
+.btn-registration:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .chose-hospital {
@@ -189,6 +203,9 @@ header {
     font-size: 20px;
 }
 
+.about-hospital:hover {
+    background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
+}
 
 .info-hospital {
     background-image: url("http://kokl.com.ua/wp-content/uploads/2016/06/h-parallax-2.jpg");
@@ -429,6 +446,18 @@ footer h2 {
 }
 
 @media (max-width: 600px) {
+    .head-name-left {
+        display: none;
+    }
+
+    .first-page .head-name-right {
+        height: 662px;
+    }
+
+    .head-name-right h1 {
+        display: flex;
+        justify-content: center;
+    }
 
     .text-registration h1 {
         text-align: center;
@@ -452,10 +481,7 @@ footer h2 {
         width: 100%;
     }
 
-    .header-menu {
-        display: none;
-    }
-
+  
 
     .room-icon {
         width: 50%;
@@ -486,7 +512,6 @@ footer h2 {
     }
 
     /*hfmburger*/
-    
 }
 
 
@@ -542,4 +567,88 @@ footer h2 {
         display: flex;
         margin: 0 auto;
     }
+}
+
+
+/*hamburger menu */
+@media (max-width: 600px){
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-icon > span,
+.menu-icon > span::before,
+.menu-icon > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: black;
+}
+
+.menu-icon > span::before {
+    content: '';
+    top: 8px
+}
+
+.menu-icon > span::after{
+    content: '';
+    top: -8px;
+}
+
+.menu-box {
+    display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.header-menu-iteam a {
+    display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#menu-btn:checked ~ .menu-icon > span {
+    transform: rotate(45deg);
+  }
+  #menu-btn:checked ~ .menu-icon > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu-btn:checked ~ .menu-icon > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+#menu-btn:checked ~ .menu-box {
+    visibility: visible;
+    right: 0;
+  }
 }
