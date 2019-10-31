@@ -197,60 +197,6 @@ p {
     background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
 }
 
-.info-hospital {
-    background-image: url("http://kokl.com.ua/wp-content/uploads/2016/06/h-parallax-2.jpg");
-    padding-top: 80px;
-    padding-bottom: 40px;
-    min-height: 150px;
-    color: white;
-}
-
-.info-hospital-inside {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
-    min-height: inherit;
-}
-
-.count-title {
-    font-size: 18px; 
-    margin: 10px 0;
-    text-align: center;
-}
-
-.count-span {
-    font-size: 48px;
-    margin: 10px;
-}
-
-.contact-info {
-    background-image: url(iStock-619636894.jpg);
-}
-
-
-
-
-
-/*
-.departament {
-    padding: 70px 0;
-    background-image: url(iStock-619636894.jpg);
-}
-
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 1200px) {
-    .container{
-        max-width: 1170px;
-    }
-}
-*/
-
 .info-contact{
     padding: 20px 0 80px 0;
 }
