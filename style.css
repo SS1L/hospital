@@ -89,6 +89,7 @@ p {
 .head-name-right{
     width: 50%;
     background-image: url("img/hospital.jpg");
+    background-repeat: no-repeat;
 }
 
 .head-name-right h1 {
@@ -373,11 +374,13 @@ footer h2 {
 
     .first-page .head-name-right {
         height: 662px;
+        background-position: 70%;
     }
 
     .head-name-right h1 {
         display: flex;
         justify-content: center;
+        text-align: center;
     }
 
     .text-registration h1 {
@@ -441,6 +444,8 @@ footer h2 {
     }
 
     .head-name-right{
+        background-size: cover;
+        background-position: 100% 13%;
         height: 360px;
         width: 100%;
     }
