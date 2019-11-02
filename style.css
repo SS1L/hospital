@@ -143,7 +143,7 @@ p {
 
 .information {
     display: flex;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 @media(min-width: 901px){
@@ -181,24 +181,6 @@ p {
 .information h3 {
     text-align: center;
     margin: 20px 0 10px 0;
-}
-
-.btn-hospital {
-    text-align: center;
-}
-
-.about-hospital {
-    padding: 10px 30px;
-    border-radius: 20px;
-    border: none;
-    background-color: #0756a5;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.about-hospital:hover {
-    background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
 }
 
 .info-contact{
@@ -415,12 +397,6 @@ footer h2 {
         flex-flow: column;
         align-items: center;
     }
-
-    .about-hospital {
-        width: 100%;
-    }
-
-  
 
     .room-icon {
         width: 50%;
