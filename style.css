@@ -384,6 +384,7 @@ footer h2 {
 
     .head-name-right h1 {
         display: block;
+        text-align: center;
         text-transform: uppercase;
     }
 

@@ -4,35 +4,102 @@
 <head>
     <title>Hospital</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <lable for="surname">
-        <b>Surname</b>
-    </lable>
-    <input type="text" name="surname" placeholder="Enter your Surname" required>
-    <label for="name">
-        <b>
-            Name
-        </b>
-    </label>
-    <input type="text" name="name" placeholder="Enter your Name" required>
-    <lable for="sex">
-        <b>Male or female</b>
-    </lable>
-    <input type="radio" name="sex">
-    <input type="radio" name="sex">
-    <input type="radio" name="sex">
-    <label for="email">
-        <b>E-mail</b>
-    </label>
-    <input type="email" name="email" placeholder="Enter email">
-    <label for="birthday">
-        <b>Birthday</b>
-    </label>
-    <input type="date" name="birthday" required>
 
-    <button>Register</button>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img class="header-img" src="img/hospital-logo.png" alt="doctor-and-nurse">
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span></span>
+            </label>
+            <ul class="menu-box">
+                <li class="header-menu-iteam"><a href="#">Страхування</a></li>
+                <li class="header-menu-iteam"><a href="#">Медична реформа</a></li>
+                <li class="header-menu-iteam"><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="regist-form">
+        <div class="regist">
+            <div class="regist-header">
+                <h1 class="regist-title">Registration</h1>
+            </div>
+            <form class="information" action="registration.php" method="post">
+                <div class="input-group">
+                    <div class="name">
+                        Name
+                    </div>
+
+                    <div>
+                        <div>
+                            <input class="enter" type="text" name="name" placeholder="Name" required>
+                            <label for="name">
+                                Name
+                            </label>
+                        </div>
+
+
+                        <div>
+                            <label for="surname">
+                            </label>
+                            <input class="enter" type="text" name="surname" placeholder="Surname" required>
+                            <label for="name">
+                                Surname
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="input-group">
+                </div>
+                <!--<lable for="sex">
+            <b>Male or female</b>
+        </lable>
+        <input type="radio" name="sex">
+        <input type="radio" name="sex">
+        <input type="radio" name="sex">
+            -->
+                <div class="input-group">
+                    <div class="name">
+                        Email
+                    </div>
+                    <input class="enter" type="email" name="email" placeholder="E-mail">
+                </div>
+                <!--
+        <label for="birthday">
+            <b>Birthday</b>
+        </label>
+        <input type="date" name="birthday" required>-->
+                <div class="input-group">
+                    <div class="name">
+                        Phone
+                    </div>
+                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number" required>
+                </div>
+
+                <div class="input-group">
+                    <div class="name">
+                        Password
+                    </div>
+                    <input class="enter" type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="log-in">
+                    <input class="sign-up" type="submit" name="create" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
