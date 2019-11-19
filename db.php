@@ -1,17 +1,9 @@
 <?php
+    $db_server = "localhost";
+    $db_username = "root";
+    $db_password = "12345678";
+    $db_database = "useraccounts";
+    $conn = new PDO("mysql:host=$db_server;dbname=$db_database", $db_username, $db_password);
 
-class MyDB extends SQLite3
-{
-   function __construct()
-   {
-      $this->open('combadd.sqlite');
-   }
-}
-$db = new MyDB();
-if(!$db){
-   echo $db->lastErrorMsg();
-} else {
-   echo "Opened database successfully\n";
-}
-
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 ?>

@@ -1,3 +1,7 @@
+<?php
+    ini_set('display_errors', 1);
+    include('registration.php') 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +14,9 @@
 </head>
 
 <body>
+    <div>
 
+</div>
     <header>
         <div class="container">
             <a href="index.html">
@@ -38,26 +44,20 @@
                     <div class="name">
                         Name
                     </div>
-
-                    <div>
-                        <div>
-                            <input class="enter" type="text" name="name" placeholder="Name" required>
-                            <label for="name">
-                                Name
-                            </label>
-                        </div>
-
-
-                        <div>
-                            <label for="surname">
-                            </label>
-                            <input class="enter" type="text" name="surname" placeholder="Surname" required>
-                            <label for="name">
-                                Surname
-                            </label>
-                        </div>
-                    </div>
+                        <input class="enter" type="text" name="firstname" placeholder="Name" required>
+                    
                 </div>
+
+                <div class="input-group">
+                    <div class="name">
+                        Surname
+                    </div>
+                    <label for="surname">
+                    </label>
+                    <input class="enter" type="text" name="surname" placeholder="Surname" required>
+                </div>
+
+
 
 
                 <div class="input-group">
@@ -73,7 +73,7 @@
                     <div class="name">
                         Email
                     </div>
-                    <input class="enter" type="email" name="email" placeholder="E-mail">
+                    <input class="enter" type="email" name="email" placeholder="E-mail" required>
                 </div>
                 <!--
         <label for="birthday">
@@ -84,7 +84,8 @@
                     <div class="name">
                         Phone
                     </div>
-                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number" required>
+                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number"
+                        pattern="[0-9\s]+" required>
                 </div>
 
                 <div class="input-group">
@@ -94,6 +95,13 @@
                     <input class="enter" type="password" name="password" placeholder="Password" required>
                 </div>
 
+                <!--<div class="input-group">
+                        <div class="name">
+                            Confirm password
+                        </div>
+                        <input class="enter" type="password" name="password" placeholder="Password" required>
+                    </div>
+                -->
                 <div class="log-in">
                     <input class="sign-up" type="submit" name="create" value="Sign Up">
                 </div>

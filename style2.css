@@ -79,8 +79,6 @@ header {
 
 
 
-
-
 .regist {
     max-width: 800px;
     margin: 0 auto;
@@ -103,6 +101,7 @@ header {
     background-color: #fff;
     border-radius: 0 0 20px 20px;
 }
+
 
 .enter {
     width: 100%;
