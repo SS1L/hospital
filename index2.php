@@ -1,6 +1,8 @@
 <?php
     ini_set('display_errors', 1);
-    include('registration.php') 
+    //session_start();
+    include('registration.php');
+    //include('test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +41,9 @@
             <div class="regist-header">
                 <h1 class="regist-title">Registration</h1>
             </div>
-            <form class="information" action="registration.php" method="post">
+            <form class="information" action="" method="post">
+                   
+                </div>
                 <div class="input-group">
                     <div class="name">
                         Name
@@ -84,8 +88,7 @@
                     <div class="name">
                         Phone
                     </div>
-                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number"
-                        pattern="[0-9\s]+" required>
+                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number" required>
                 </div>
 
                 <div class="input-group">
