@@ -18,7 +18,6 @@
 <body>
     <div>
 
-</div>
     <header>
         <div class="container">
             <a href="index.html">
@@ -41,14 +40,20 @@
             <div class="regist-header">
                 <h1 class="regist-title">Registration</h1>
             </div>
-            <form class="information" action="" method="post">
-                   
+            
+            <form class="information" action="index2.php" method="post">
+            <div class="danger">
+                <?php 
+                        if(isset($error)){
+                            echo $error;
+                        }
+                    ?>
                 </div>
                 <div class="input-group">
                     <div class="name">
                         Name
                     </div>
-                        <input class="enter" type="text" name="firstname" placeholder="Name" required>
+                        <input class="enter" type="text" name="firstname" placeholder="Name" value="<?php if(isset($firstname)): echo $firstname; endif;?>">
                     
                 </div>
 
@@ -58,14 +63,13 @@
                     </div>
                     <label for="surname">
                     </label>
-                    <input class="enter" type="text" name="surname" placeholder="Surname" required>
+                    <input class="enter" type="text" name="surname" placeholder="Surname" value="<?php if(isset($surname)): echo $surname; endif;?>">
                 </div>
 
 
 
 
-                <div class="input-group">
-                </div>
+                
                 <!--<lable for="sex">
             <b>Male or female</b>
         </lable>
@@ -77,26 +81,29 @@
                     <div class="name">
                         Email
                     </div>
-                    <input class="enter" type="email" name="email" placeholder="E-mail" required>
+                    <input class="enter" type="email" name="email" placeholder="E-mail" value="<?php if(isset($email)): echo $email; endif;?>">
                 </div>
                 <!--
         <label for="birthday">
             <b>Birthday</b>
         </label>
         <input type="date" name="birthday" required>-->
+
                 <div class="input-group">
-                    <div class="name">
-                        Phone
-                    </div>
-                    <input class="enter" type="phonenumber" name="phonenumber" placeholder="Phone number" required>
+                        <div class="name">
+                            Password
+                        </div>
+                        <input class="enter" type="password" name="password" placeholder="Password" value="<?php if(isset($password)): echo $password; endif;?>">
                 </div>
 
                 <div class="input-group">
                     <div class="name">
-                        Password
+                        Confirm
                     </div>
-                    <input class="enter" type="password" name="password" placeholder="Password" required>
+                    <input class="enter" type="password" name="confirm" placeholder="Confirm password" value="<?php if(isset($confirm)): echo $confirm; endif;?>">
                 </div>
+
+                
 
                 <!--<div class="input-group">
                         <div class="name">
