@@ -1,3 +1,10 @@
+<?php
+    ini_set('display_errors', 1);
+    //session_start();
+    include('registration.php');
+    //include('test.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,9 +34,8 @@
                 <li class="header-menu-iteam"><a href="#">Контакти</a></li>
             </ul>
         </div>
-    </header>
 
-    <div class="first-page">
+        <div class="first-page">
         <div class="head-name-left">
             <div class="inside-head-name">
                 <h1 class="name-hospital">Hello, we are medical!!!</h1>
@@ -44,6 +50,9 @@
             <h1>Hello, we are medical!!!</h1>
         </div>
     </div>
+    </header>
+
+    
 
     <div class="chose-hospital">
         <div class="chose-hospital-inside">
@@ -107,8 +116,65 @@
     <section class="registration">
         <div class="text-registration">
             <h1>Register today and get first appointment!</h1>
-            <div class="register">
-                <a class="btn-registration" href="index2.html">Registration</a>
+            <a class="btn-registration" href="javascript:void(0)" onclick="document.getElementById('register').style.display='block';document.getElementById('fade').style.display='block'">Registration</a>
+            <div id="register" class="register">
+                <a class="show-btn" href="javascript:void(0)" onclick = "document.getElementById('register').style.display='none';document.getElementById('fade').style.display='none'">Exit</a>
+                <form class="information" action="" method="post">
+                    <div class="danger">
+                            <?php 
+                                if(isset($error)){
+                                    echo $error;
+                                }
+                            ?>
+                    </div>
+                    <div class="input-group">
+                        <div class="name">
+                            Name
+                        </div>
+                        <input class="enter" type="text" name="firstname" placeholder="Name"
+                            value="<?php if(isset($firstname)): echo $firstname; endif;?>">
+
+                    </div>
+
+                    <div class="input-group">
+                        <div class="name">
+                            Surname
+                        </div>
+                        <label for="surname">
+                        </label>
+                        <input class="enter" type="text" name="surname" placeholder="Surname"
+                            value="<?php if(isset($surname)): echo $surname; endif;?>">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="name">
+                            Email
+                        </div>
+                        <input class="enter" type="email" name="email" placeholder="E-mail"
+                            value="<?php if(isset($email)): echo $email; endif;?>">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="name">
+                            Password
+                        </div>
+                        <input class="enter" type="password" name="password" placeholder="Password"
+                            value="<?php if(isset($password)): echo $password; endif;?>">
+                    </div>
+
+                    <div class="input-group">
+                        <div class="name">
+                            Confirm
+                        </div>
+                        <input class="enter" type="password" name="confirm" placeholder="Confirm password"
+                            value="<?php if(isset($confirm)): echo $confirm; endif;?>">
+                    </div>
+
+                    <div class="log-in">
+                        <input class="sign-up" type="submit" name="create" value="Sign Up">
+                    </div>
+                </form>
+                <div id="fade" class="black-overlay"></div>
             </div>
         </div>
     </section>

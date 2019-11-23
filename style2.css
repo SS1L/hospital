@@ -79,7 +79,7 @@ header {
 .danger {
     display: flex;
     align-items: center;
-    background-color: #fff;
+    color: red;
     width: 100%;
     height: 50px;
 }

@@ -37,21 +37,20 @@
                                 }
                             }
                             else {
-                                $error = "<div class='danger'>Passwords do not match</div>";
+                                $error = "<div class='danger'>Passwords do not match!</div>";
                             }
 
                         }
                         else {
-                            $error = "<div class='danger'>Easy password</div>";
+                            $error = "<div class='danger'>Easy password!</div>";
                         }
-
                     }
                     else{
-                        $error = "<div class='danger'>Not valid email</div>";
+                        $error = "<div class='danger'>Not valid email!</div>";
                     }
                 }
                 else {
-                    $error = "<div class='danger'>Surname muat be character</div>";
+                    $error = "<div class='danger'>Surname muat be character!</div>";
                 }
             }
             else{
