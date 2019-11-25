@@ -2,7 +2,7 @@
     ini_set('display_errors', 1);
     //session_start();
     include('registration.php');
-    //include('test.php');
+    include('test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,28 +66,12 @@
                     <input class="enter" type="text" name="surname" placeholder="Surname" value="<?php if(isset($surname)): echo $surname; endif;?>">
                 </div>
 
-
-
-
-                
-                <!--<lable for="sex">
-            <b>Male or female</b>
-        </lable>
-        <input type="radio" name="sex">
-        <input type="radio" name="sex">
-        <input type="radio" name="sex">
-            -->
                 <div class="input-group">
                     <div class="name">
                         Email
                     </div>
                     <input class="enter" type="email" name="email" placeholder="E-mail" value="<?php if(isset($email)): echo $email; endif;?>">
                 </div>
-                <!--
-        <label for="birthday">
-            <b>Birthday</b>
-        </label>
-        <input type="date" name="birthday" required>-->
 
                 <div class="input-group">
                         <div class="name">
@@ -103,21 +87,37 @@
                     <input class="enter" type="password" name="confirm" placeholder="Confirm password" value="<?php if(isset($confirm)): echo $confirm; endif;?>">
                 </div>
 
-                
-
-                <!--<div class="input-group">
-                        <div class="name">
-                            Confirm password
-                        </div>
-                        <input class="enter" type="password" name="password" placeholder="Password" required>
-                    </div>
-                -->
                 <div class="log-in">
                     <input class="sign-up" type="submit" name="create" value="Sign Up">
                 </div>
             </form>
         </div>
     </div>
+
+    <footer>
+        <h2>HOSPITAL</h2>
+        <ul class="footer-menu-wrap">
+            <li class="footer-menu-item"><a href="#">Registration</a></li>
+            <li class="footer-menu-item"><a href="#">Service</a></li>
+            <li class="footer-menu-item"><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="reference">
+            <a href="#">
+                <img src="img/facebook.png" alt="facebook">
+            </a>
+            <a href="#">
+                <img src="img/instagram.png" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="img/telegram.png" alt="telegram">
+            </a>
+        </div>
+        <div class="bottom-footer">
+            @ Made by
+            <a href="https://github.com/SS1L" target="_blanck">Vlad Artyukh</a>
+        </div>
+    </footer>
 </body>
 
 </html>
