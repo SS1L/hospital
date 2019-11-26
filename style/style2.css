@@ -1,14 +1,16 @@
+@import "/style/root.css";
+
 * {
     margin: 0;
 }
 
 body{
     margin: 0;
-    background-color: rgb(250, 250, 250);
+    background-color: var(--snow);
 }
 
 header {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .container {
@@ -45,11 +47,11 @@ header {
 .header-menu-iteam a {
     padding: 10px 20px;
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
 
 .headet-menu-iteam a:hover {
-    color: rgb(231, 10, 84);
+    color: var(--razzmatazz);
 }
 
 .first-page {
@@ -61,8 +63,8 @@ header {
     display: flex;
     align-items: center;
     width: 50%;
-    color: #fff;
-    background: rgb(9,101,130);
+    color: var(--white);
+    background: var(--allports);
     background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
 }
 
@@ -74,12 +76,12 @@ header {
 
 .inside-head-name p {
     margin-top: 20px;
-    color: white;
+    color: var(--white);
 }
 .danger {
     display: flex;
     align-items: center;
-    color: red;
+    color: var(--red);
     width: 100%;
     height: 50px;/*need fix height*/
     justify-content: center;
@@ -93,7 +95,7 @@ header {
 }
 
 .regist-header {
-    background-color: #1a1a1a;
+    background-color: var(--nero);
     padding: 20px 0; 
     border-radius: 20px 20px 0 0;
 }
@@ -102,13 +104,12 @@ header {
 @media (max-width: 600px){
     .regist-header{
     border-radius: 0;
-    background-color: #1a1a1a;
     padding: 20px 0;
     }
 
     .regist .information{
-        padding: 20px 30px;
-        border-radius: 0;
+    padding: 20px 30px;
+    border-radius: 0;
     }
 
     .sign-up{
@@ -117,7 +118,7 @@ header {
 }
 
 .regist-title {
-    color: #fff;
+    color: var(--white);
     text-align: center;
     text-transform: uppercase;
 }
@@ -126,7 +127,7 @@ header {
 .information {
     box-shadow: 0 0 10px #00000080;
     padding: 50px 80px;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 0 0 20px 20px;
 }
 
@@ -135,12 +136,12 @@ header {
 .enter {
     width: 100%;
     border: none;
-    background-color: #e5e5e5;
+    background-color: var(--whisper);
     line-height: 50px;
     border-radius: 5px;
     padding: 0 20px;
     font-size: 20px;
-    color: #444444;
+    color: var(--charcoal);
 }
 
 .input-group {
@@ -152,14 +153,14 @@ header {
 .name {
     width: 100px;
     font-size: 16px;
-    color: #555;
+    color: var(--matterhorn);
     font-weight: 700;
 }
 
 .sign-up {
     text-transform: uppercase;
-    color: #333;
-    background-color: #2d96fd;
+    color: var(--night-rider);
+    background-color: var(--dodger-blue);
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -196,7 +197,7 @@ input {
         width: 100%;
         height: 2px;
     
-        background-color: black;
+        background-color: var(--black);
     }
     
     .menu-icon > span::before {
@@ -221,14 +222,14 @@ input {
         padding: 80px 0;
         list-style: none;
         text-align: center;
-        background-color: #eceff1;
+        background-color: var(--alice-white);
         box-shadow: 1px 0px 6px #00000033;
     }
     
     .header-menu-iteam a {
         display: block;
         padding: 12px 24px;
-        color: #333;
+        color: var(--night-rider);
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 600;
@@ -260,11 +261,11 @@ input {
     }
 
     footer { 
-        background-color: #383838;
+        background-color: var(--eclipse);
     }
     
     footer h2 {
-        color: #fff;
+        color: var(--white);
         text-align: center;
         margin-bottom: 20px;
     }
@@ -280,22 +281,22 @@ input {
     
     .footer-menu-item a {
         text-decoration: none;
-        color: #fff;
+        color: var(--white);
         margin: 0 10px;
     }
     
     .footer-menu-item a:hover{
-        color: #c2bdbd;
+        color: var(--silver);
     }
     .bottom-footer {
-        color: #fff;
+        color: var(--white);
         margin-top: 10px;
         text-align: center;
     }
     
     .bottom-footer a {
         text-decoration: none;
-        color: #fff;
+        color: var(--white);
     }
     
     .reference {
@@ -314,5 +315,5 @@ input {
     }
     
     .bottom-footer a:hover {
-        color: #c2bdbd;
+        color: var(--silver);
     }    
