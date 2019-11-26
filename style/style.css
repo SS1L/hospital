@@ -14,8 +14,6 @@ p {
     color: #707070;
 }
 
-
-
 .container {
     display: flex;
     align-items: center;
@@ -24,13 +22,7 @@ p {
     margin: 0 auto;
 }
 
-/* hamburger menu */
-
-
-/*
-*/
-
-.header-img {
+.logo {
     width: 60px;
 }
 
@@ -62,7 +54,7 @@ p {
     height: 662px;
 }
 
-.head-name-left{
+.head-left{
     display: flex;
     align-items: center;
     width: 50%;
@@ -71,13 +63,13 @@ p {
     background: linear-gradient(0deg, rgba(9,101,130,1) 0%, rgba(45,150,253,1) 70%);
 }
 
-.inside-head-name {
+.slogan {
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
 
-.inside-head-name p {
+.subtitle {
     margin-top: 20px;
     color: white;
 }
@@ -86,15 +78,15 @@ p {
     font-size: 70px;
 }
 
-.head-name-right{
+.head-right{
     width: 50%;
-    background-image: url("img/hospital.jpg");
+    background-image: url("/img/hospital.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.head-name-right h1 {
+.head-right h1 {
     display: none;
 }
 
@@ -149,16 +141,6 @@ p {
     margin: 50px 0 0 0;
 }
 
-@media(min-width: 901px){
-.reason-v1 {
-    display: flex;
-}
-
-.reason-v2 {
-    display: flex;
-}
-}
-
 /* need reason-1 ... reason-4 */
 /* need fix*/
 .reason-1, .reason-2, .reason-3, .reason-4  {
@@ -186,8 +168,9 @@ p {
     margin: 20px 0 10px 0;
 }
 
-.info-contact{
+.feedback{
     padding: 20px 0 80px 0;
+    background-color: #f5f7fa;
 }
 .contact-us {
     width: 85%;
@@ -255,11 +238,10 @@ footer {
     padding: 30px 0;
 }
 
-
 /*start quote*/
-
 .quote {
     padding: 60px 0;
+    background-color: #f5f7fa;
 }
 
 .quote-inside {
@@ -285,7 +267,7 @@ footer {
     padding: 20px 30px;
 }
 
-.img-client-1 {
+.photo-img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -320,7 +302,7 @@ footer h2 {
     margin-bottom: 20px;
 }
 
-.footer-menu-wrap {
+.footer-item {
     display: flex;
     justify-content: center;
 }
@@ -350,17 +332,37 @@ footer h2 {
     color: #fff;
 }
 
-.reference {
+.socials {
     text-align: center;
     margin: 15px 0;
 }
 
-.reference a {
+.facebook{
     margin: 0 10px;
     text-decoration: none;
 }
 
-.reference img:hover {
+.instagram {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.telegram{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socials .facebook-img:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+
+.instagram-img:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+
+.telegram-img:hover{
     transform: scale(1.2);
     border-radius: 50%;
 }
@@ -369,93 +371,31 @@ footer h2 {
     color: #c2bdbd;
 }
 
-@media (max-width: 600px) {
-    .head-name-left {
-        display: none;
-    }
-
-    .first-page .head-name-right {
+@media (max-width: 900px){
+    .reason-v1 {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 662px;
-        background-position: 70%;
-    }
-
-    .head-name-right h1 {
-        display: block;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .text-registration h1 {
-        text-align: center;
     }
     
-
-    .information{
-        flex-flow: column;
+    .reason-v2 {
+        display: flex;
     }
-
-    .info-hospital-inside{
-        flex-flow: column;
-    }
-
-    .icons {
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .room-icon {
-        width: 50%;
-    }
-
-    .phone-icon {
-        margin-top: 20px;
-        width: 50%;
-    }
-
-    .mail-icon {
-        margin-top: 20px;
-        width: 50%;
-    }
-
-
-
-    .paragraf-contact {
-        margin-bottom: 40px;
-    }
-
-    .text-registration{
-        flex-flow: column;
-    }
-
-    .register {
-        margin: 40px 0 0 0;
-    }
-
-    /*hfmburger*/
-}
-
-
-@media (max-width: 900px){
     .first-page {
         flex-flow: column;
     }
 
-    .head-name-left {
+    .head-left {
         width: 100%;
         padding: 50px 0;
     }
 
-    .head-name-right{
+    .head-right{
         background-size: cover;
         background-position: 100% 13%;
         height: 360px;
         width: 100%;
     }
 
-    .header-paragraph {
+    .subtitle {
         display: none;    
     }
 
@@ -473,7 +413,7 @@ footer h2 {
         text-align: center;
     }
 
-    .img-client-1 {
+    .photo-img {
         display: flex;
         margin: 0 auto;
     }
@@ -493,7 +433,6 @@ footer h2 {
         margin: 0 auto;
     }
 }
-
 
 /*hamburger menu */
 @media (max-width: 600px){
@@ -577,5 +516,66 @@ footer h2 {
 #menu-btn:checked ~ .menu-box {
     visibility: visible;
     right: 0;
+}
+
+.head-left {
+    display: none;
+}
+
+.first-page .head-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 662px;
+    background-position: 70%;
+}
+
+.head-right h1 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-registration h1 {
+    text-align: center;
+}
+
+.information{
+    flex-flow: column;
+}
+
+.info-hospital-inside{
+    flex-flow: column;
+}
+
+.icons {
+    flex-flow: column;
+    align-items: center;
+}
+
+.room-icon {
+    width: 50%;
+}
+
+.phone-icon {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.mail-icon {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.paragraf-contact {
+    margin-bottom: 40px;
+}
+
+.text-registration{
+    flex-flow: column;
+}
+
+.register {
+    margin: 40px 0 0 0;
 }
 }

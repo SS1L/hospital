@@ -81,7 +81,9 @@ header {
     align-items: center;
     color: red;
     width: 100%;
-    height: 50px;
+    height: 50px;/*need fix height*/
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 
@@ -103,9 +105,12 @@ header {
     background-color: #1a1a1a;
     padding: 20px 0;
     }
-    .information{
-        padding: 0 30px;
+
+    .regist .information{
+        padding: 20px 30px;
+        border-radius: 0;
     }
+
     .sign-up{
         width: 100%;
     }

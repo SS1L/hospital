@@ -1,8 +1,8 @@
 <?php
     ini_set('display_errors', 1);
     //session_start();
-    include('registration.php');
-    include('test.php');
+    include('includes/registration.php');
+    include('includes/test.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
     <title>Hospital</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style/style2.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 

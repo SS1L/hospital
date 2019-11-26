@@ -4,7 +4,7 @@
 
 
     if(isset($_POST['create'])){
-        require 'db.php';
+        require 'database/db.php';
         $error ='';
         $firstname = trim($_POST['firstname']);
         $surname = trim($_POST['surname']);
@@ -30,10 +30,9 @@
                                     $error= "<div class='danger'>Sorry,but someone registration using this email</div>";
                                 }
                                 else {
-                                    $sql = $db->prepare("INSERT INTO users (firstname, surname, email, comfirm, password) VALUES(?,?,?,?,?)");
-                                    //$error = "<div class='danger'>Create account</div>";
-                                    //$conn->exec($sql); 
-                                    echo "<script>alert('Account successfuly edded')</script>"; 
+                                    $sql = $db->prepare("INSERT INTO users (firstname, surname, email, confirm, password) VALUES(?,?,?,?,?)");
+                                    $sql->execute([$firstname, $surname, $email, $confirm, md5($password)]);
+                                    $error= "<div class='danger'>Account created successfully</div>";
                                 }
                             }
                             else {
@@ -50,24 +49,12 @@
                     }
                 }
                 else {
-                    $error = "<div class='danger'>Surname muat be character!</div>";
+                    $error = "<div class='danger'>Surname must be character!</div>";
                 }
             }
             else{
                 $error = "<div class='danger'>First name must be character!</div>";
             }
         }
-
-            //$password = md5($password."adsjl2983sajkwu278");}
-            
-
-        
-
-        //$conn = new PDO("mysql:host=$db_server;dbname=$db_database", $db_username, $db_password);
-        //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        //$sql = "INSERT INTO users (firstname, surname, email, phonenumber, password) VALUES('$firstname', '$surname', '$email', '$phonenumber', '$password')";
-        //$conn->exec($sql); 
-        //echo "<script>alert('Account successfuly edded')</script>";    
     }
 ?>
