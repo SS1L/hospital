@@ -2,7 +2,7 @@
     ini_set('display_errors', 1);
     //session_start();
     include('includes/registration.php');
-    include('includes/test.php');
+    include('includes/connect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +41,7 @@
                 <h1 class="regist-title">Registration</h1>
             </div>
             
-            <form class="information" action="index2.php" method="post">
+            <form class="information" action="index2.php" method="POST">
             <div class="danger">
                 <?php 
                         if(isset($error)){

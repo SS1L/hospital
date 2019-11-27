@@ -1,6 +1,6 @@
 <?php
     ini_set('display_errors', 1);
-    include('test.php');
+    include('connect.php');
 
 
     if(isset($_POST['create'])){
@@ -45,7 +45,7 @@
                         }
                     }
                     else{
-                        $error = "<div class='danger'>Not valid email!</div>";
+                        $error = "<div class='danger'>Invalid mail</div>";
                     }
                 }
                 else {
