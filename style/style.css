@@ -13,7 +13,7 @@
 }*/
 
 p {
-  color: var(--gray35);
+  color: var(--gray500);
 }
 
 .container {
@@ -125,7 +125,7 @@ p {
 
 .chose-hospital {
   padding: 80px 0;
-  background-color: var(--gray55);
+  background-color: var(--gray900);
 }
 
 .chose-hospital-inside {
@@ -167,7 +167,7 @@ p {
 
 .feedback {
   padding: 20px 0 80px 0;
-  background-color: var(--gray55);
+  background-color: var(--gray900);
 }
 .contact-us {
   width: 85%;
@@ -185,7 +185,7 @@ p {
   margin: 0 auto;
   margin-bottom: 70px;
   text-align: center;
-  color: var(--gray35);
+  color: var(--gray500);
 }
 
 .icons-img {
@@ -215,7 +215,7 @@ footer {
 /*start quote*/
 .quote {
   padding: 60px 0;
-  background-color: var(--gray55);
+  background-color: var(--gray900);
 }
 
 .quote-inside {
@@ -252,7 +252,7 @@ footer {
 /*end quote*/
 
 footer {
-  background-color: var(--gray20);
+  background-color: var(--gray200);
 }
 
 .footer-title {
@@ -277,7 +277,7 @@ footer {
 }
 
 .footer-item a:hover {
-  color: var(--gray40);
+  color: var(--gray600);
 }
 
 .socials {
@@ -307,7 +307,7 @@ footer {
 }
 
 .git-link:hover {
-  color: var(--gray40);
+  color: var(--gray600);
 }
 
 @media (max-width: 900px) {
@@ -408,7 +408,7 @@ footer {
   .header-menu-iteam a {
     display: block;
     padding: 12px 24px;
-    color: var(--gray15);
+    color: var(--gray100);
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 600;

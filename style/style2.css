@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background-color: var(--gray50);
+  background-color: var(--gray800);
 }
 
 header {
@@ -50,7 +50,7 @@ header {
 }
 
 .headet-menu-iteam a:hover {
-  color: var(--red10);
+  color: var(--red100);
 }
 
 .first-page {
@@ -63,7 +63,7 @@ header {
   align-items: center;
   width: 50%;
   color: var(--white);
-  background: var(--blue10);
+  background: var(--blue100);
   background: linear-gradient(
     0deg,
     rgba(9, 101, 130, 1) 0%,
@@ -97,7 +97,7 @@ header {
 }
 
 .regist-header {
-  background-color: var(--gray10);
+  background-color: var(--gray800);
   padding: 20px 0;
   border-radius: 20px 20px 0 0;
 }
@@ -134,12 +134,12 @@ header {
 .enter {
   width: 100%;
   border: none;
-  background-color: var(--gray45);
+  background-color: var(--gray700);
   line-height: 50px;
   border-radius: 5px;
   padding: 0 20px;
   font-size: 20px;
-  color: var(--gray25);
+  color: var(--gray300);
 }
 
 .input-group {
@@ -151,13 +151,13 @@ header {
 .name {
   width: 100px;
   font-size: 16px;
-  color: var(--gray30);
+  color: var(--gray400);
   font-weight: 700;
 }
 
 .sign-up {
   text-transform: uppercase;
-  color: var(--gray15);
+  color: var(--gray100);
   background-color: var(--blue);
   cursor: pointer;
   border: none;
@@ -218,14 +218,14 @@ input {
     padding: 80px 0;
     list-style: none;
     text-align: center;
-    background-color: var(--gray55);
+    background-color: var(--gray900);
     box-shadow: 1px 0px 6px #00000033;
   }
 
   .header-menu-iteam a {
     display: block;
     padding: 12px 24px;
-    color: var(--gray15);
+    color: var(--gray100);
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -257,7 +257,7 @@ footer {
 }
 
 footer {
-  background-color: var(--gray20);
+  background-color: var(--gray200);
 }
 
 footer h2 {
@@ -282,7 +282,7 @@ footer h2 {
 }
 
 .footer-menu-item a:hover {
-  color: var(--gray40);
+  color: var(--gray600);
 }
 .bottom-footer {
   color: var(--white);
@@ -311,5 +311,5 @@ footer h2 {
 }
 
 .bottom-footer a:hover {
-  color: var(--gray40);
+  color: var(--gray600);
 }

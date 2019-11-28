@@ -22,7 +22,7 @@
                 <div>
                     Email
                 </div>
-                <input type="email" name="password" placeholder="E-mail" value="<?php if(isset($email)): echo $email; endif;?>">
+                <input type="email" name="email" placeholder="E-mail" value="<?php if(isset($email)): echo $email; endif;?>">
             </div>
             <div>
                 <div>

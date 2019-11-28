@@ -2,19 +2,19 @@
     --black: #000000;
     --white: #ffffff;
 
-    --gray10: #1a1a1a;
-    --gray15: #333333;
-    --gray20: #383838;
-    --gray25: #444444;
-    --gray30: #555555; 
-    --gray35: #707070;
-    --gray40: #c2bdbd;
-    --gray45: #e5e5e5;
-    --gray50: #fafafa;
+    --gray50: #1a1a1a;
+    --gray100: #333333;
+    --gray200: #383838;
+    --gray300: #444444;
+    --gray400: #555555; 
+    --gray500: #707070;
+    --gray600: #c2bdbd;
+    --gray700: #e5e5e5;
+    --gray800: #fafafa;
     --gray55: #f5f7fa;
 
     --red: #ff0000;
-    --red10: #e70a54;
+    --red100: #e70a54;
     --blue: #2d96fd;
-    --blue10: #096582;
+    --blue100: #096582;
 }
