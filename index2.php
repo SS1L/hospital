@@ -89,6 +89,9 @@
 
                 <div class="log-in">
                     <input class="sign-up" type="submit" name="create" value="Sign Up">
+                    <a href="test.php">
+                        <input class="sign-up" type="submit" value="Login">
+                    </a>
                 </div>
             </form>
         </div>

@@ -146,6 +146,10 @@ p {
   margin: 50px 0 0 0;
 }
 
+.information-wrapper{
+  display: flex;
+}
+
 /* need reason-1 ... reason-4 */
 /* need fix*/
 .content {
@@ -349,6 +353,10 @@ footer {
     display: flex;
     margin: 0 auto;
   }
+
+  .information {
+    flex-flow: column;
+  }
 }
 
 /*hamburger menu */
@@ -456,11 +464,7 @@ footer {
     text-align: center;
   }
 
-  .information {
-    flex-flow: column;
-  }
-
-  .info-hospital-inside {
+  .information-wrapper{
     flex-flow: column;
   }
 
