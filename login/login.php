@@ -2,6 +2,12 @@
 ini_set('display_errors', 1);
 session_start();
 include 'includes/connect.php';
+
+
+if(isset($_SESSION['email'])){
+    header("locatin: welcome.php");
+}
+
 require 'database/db.php';
 
 if (isset($_POST['login'])) {
@@ -17,6 +23,7 @@ if (isset($_POST['login'])) {
             $query->execute(array($email, $password));
             if ($query->rowCount() >= 1) {
                 $_SESSION['email'] = $_POST['email'];
+                $_SESSION['time_start_login'] = time();
                 header("location: welcome.php");
             } else {
                 $error = "<div>Wrong email or password</div>";
