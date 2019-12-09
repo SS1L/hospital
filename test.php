@@ -4,7 +4,7 @@
     require 'header.inc.php';
 ?>
 
-
+    <main>
         <div class="regist">
             <form method="POST">
                 <div class="danger">
@@ -29,8 +29,13 @@
                 <div class="log-in">
                     <input class="sign-up" type="submit" name="login" value="Sign In">
                 </div>
+                <button class="bottom-registr">
+                    <a class="" href="index2.php">Register NOW</a>
+                </button>
+
             </form>
         </div>
+    </main>
 
 <?php
     require 'footer.inc.php';

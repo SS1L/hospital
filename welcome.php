@@ -3,11 +3,15 @@
     include('logout/logout.php');
     require 'life.php';
     require 'header.inc.php';
-?>
-        <form method="post">
-            <input type="submit" name="logout" value="log out">
-        </form>
-
+?>  
+    <main>
+        <div class="regist">
+            <h1>Welcome</h1>
+            <form method="post">
+                <input type="submit" name="logout" value="log out">
+            </form>
+        </div>
+    </main>
 <?php
     require 'footer.inc.php';
 ?>

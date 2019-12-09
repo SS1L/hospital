@@ -1,16 +1,19 @@
 @import "/style/root.css";
 
+html{
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  
 }
-/*body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}*/
+body {
+  display: flex;
+  flex-flow: column;
+}
 
 p {
   color: var(--gray500);
@@ -91,7 +94,7 @@ p {
   background-size: cover;
 }
 
-.head-right h1 {
+.right-text {
   display: none;
 }
 
@@ -100,7 +103,7 @@ p {
   background-color: var(--blue);
 }
 
-.text-registration {
+.registration-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,16 +112,22 @@ p {
   color: var(--white);
 }
 
-.btn-registration {
+.register{
+  display: flex;
+}
+
+.btn-link{
+  margin: 0 10px;
+  font-size: 20px;
   background-color: var(--white);
-  padding: 10px 20px;
+  padding: 10px 20px; 
   border-radius: 20px;
   text-decoration: none;
   color: var(--black);
-  font-size: 20px;
 }
 
-.btn-registration:hover {
+.btn-link:hover{
+  
   background-color: var(--black);
   color: var(--white);
 }
@@ -164,7 +173,7 @@ p {
   text-align: center;
 }
 
-.information h3 {
+.information-subtitle {
   text-align: center;
   margin: 20px 0 10px 0;
 }
@@ -213,6 +222,7 @@ p {
 }
 
 footer {
+  margin-top: auto;
   padding: 30px 0;
 }
 
@@ -242,7 +252,7 @@ footer {
   width: 50%;
 }
 
-.client p {
+.client-text {
   padding: 20px 30px;
 }
 
@@ -274,13 +284,13 @@ footer {
   list-style: none;
 }
 
-.footer-item a {
+.footer-link {
   text-decoration: none;
   color: var(--white);
   margin: 0 10px;
 }
 
-.footer-item a:hover {
+.footer-link:hover {
   color: var(--gray600);
 }
 
@@ -344,7 +354,7 @@ footer {
     width: 100%;
   }
 
-  .client p {
+  .client-text{
     margin-top: 20px;
     text-align: center;
   }
@@ -454,13 +464,13 @@ footer {
     background-position: 70%;
   }
 
-  .head-right h1 {
+  .right-text {
     display: block;
     text-align: center;
     text-transform: uppercase;
   }
 
-  .text-registration h1 {
+  .text-registration {
     text-align: center;
   }
 
@@ -482,11 +492,18 @@ footer {
     margin-bottom: 40px;
   }
 
-  .text-registration {
+  .registration-content {
     flex-flow: column;
   }
 
   .register {
-    margin: 40px 0 0 0;
+    flex-flow: column;
+    width: 50%;
+    margin: 20px 0 0 0;
+  }
+
+  .btn-link{
+    text-align: center;
+    margin-top: 20px;
   }
 }

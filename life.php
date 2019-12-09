@@ -8,6 +8,6 @@ if((time() - $_SESSION['time_start_login']) > 1800){
     $_SESSION['time_start_login'] = time();
 }
 } else {
-header("location: logout/logout.php");
+header("location: test.php");
 }
 ?>

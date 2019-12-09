@@ -27,7 +27,7 @@ if (isset($_POST['create'])) {
                                 $error = "<div class='danger'>Sorry,but someone registration using this email</div>";
                             } else {
                                 $sql = $db->prepare("INSERT INTO users (firstname, surname, email, confirm, password) VALUES(?,?,?,?,?)");
-                                $sql->execute([$firstname, $surname, $email, $confirm, md5($password)]);
+                                $sql->execute([$firstname, $surname, $email, $confirm, $password]);
                                 $error = "<div class='danger'>Account created successfully</div>";
                             }
                         } else {

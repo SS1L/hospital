@@ -1,1 +1,3 @@
 php_flag display_errors on
+
+ErrorDocument 404 /err404.php
