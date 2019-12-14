@@ -6,7 +6,10 @@
 
     <main>
         <div class="regist">
-            <form method="POST">
+            <div class="regist-header">
+                    <h1 class="regist-title">Log in</h1>
+            </div>
+            <form class="information" method="POST">
                 <div class="danger">
                     <?php
                         if(isset($error)){

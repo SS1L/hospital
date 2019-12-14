@@ -2,9 +2,9 @@
         <h2 class="footer-title">HOSPITAL</h2>
         <nav>
             <ul class="footer-list">
-                <li class="footer-item"><a href="index2.php">Registration</a></li>
-                <li class="footer-item"><a href="#">Service</a></li>
-                <li class="footer-item"><a href="#">Contact Us</a></li>
+                <li class="footer-item"><a class="footer-link" href="index2.php">Registration</a></li>
+                <li class="footer-item"><a class="footer-link" href="#">Service</a></li>
+                <li class="footer-item"><a class="footer-link" href="#">Contact Us</a></li>
             </ul>
         </nav>
 

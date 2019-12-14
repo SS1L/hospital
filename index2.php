@@ -1,6 +1,7 @@
 <?php
 ini_set('display_errors', 1);
 //session_start();
+//phpinfo();
 include 'includes/registration.php';
 include 'includes/connect.php';
 require 'header.inc.php';

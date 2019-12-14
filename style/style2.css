@@ -103,6 +103,7 @@ header {
 }
 
 .regist-header {
+  box-shadow: 0 0 10px var(--black);
   background-color: var(--black);
   padding: 20px 0;
   border-radius: 20px 20px 0 0;
@@ -115,7 +116,7 @@ header {
 }
 
 .information {
-  box-shadow: 0 0 10px #00000080;
+  box-shadow: 0 0 10px var(--black);
   padding: 50px 80px;
   background-color: var(--white);
   border-radius: 0 0 20px 20px;
@@ -192,13 +193,13 @@ footer {
   list-style: none;
 }
 
-.footer-item a {
+.footer-link {
   text-decoration: none;
   color: var(--white);
   margin: 0 10px;
 }
 
-.footer-item a:hover {
+.footer-link:hover {
   color: var(--gray600);
 }
 .bottom-footer {
